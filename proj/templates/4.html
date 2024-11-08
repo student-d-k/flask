@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"> -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Daumanto tinklapis</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="view/about.html">Apie mane</a></li>
+                <li><a href="view/experience.html">Darbinė patirtis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Pomėgiai</h2>
+            <p href="">Man patinka keliauti</p>
+            {% for n in names %}
+                <li>{{n}}</li>
+            {% endfor %}
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Daumanto tinklapis</p>
+    </footer>
+</body>

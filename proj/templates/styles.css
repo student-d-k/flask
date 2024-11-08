@@ -1,0 +1,68 @@
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 100px 0 40px 0; /* Padding for top and bottom */
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    position: fixed; /* Ensures header is fixed at the top */
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; /* Ensures header is on top */
+}
+
+/* Footer Styles */
+footer {
+    font-family: Lucida Console;
+    font-size: small;
+    background-color: #333;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; /* Ensures footer is on top */
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+article, section {
+    margin-bottom: 30px;
+}
+
+article h2, section h2 {
+    color: #333;
+}
