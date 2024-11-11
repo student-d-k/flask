@@ -4,15 +4,14 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, IntegerField, SubmitField
 from wtforms.validators import DataRequired, Length, NumberRange
 from flask_migrate import Migrate
-from flask_alembic import Alembic
+
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///students.db'
 db = SQLAlchemy(app)
-migrate = Migrate(app, db)  # Ensure this line is present
-alembic = Alembic()
-alembic.init_app(app)
+migrate = Migrate(app, db) 
+
 
 # Define the Student model
 class Student(db.Model):
